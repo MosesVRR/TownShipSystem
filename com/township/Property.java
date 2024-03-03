@@ -76,4 +76,14 @@ class Property {
     public RentReceipt getRentReceipt() {
         return rentReceipt;
     }
+
+    public void printDetails(){
+        System.out.println("Property Details:");
+        System.out.println("ID: " + this.getId());
+        System.out.println("Address: " + this.getAddress());
+        System.out.println("Rent: $" + this.getRent());
+        System.out.println("Parking Spaces: " + this.getParkingSpaces());
+        System.out.println("Owned By: " + this.getOwnedBy());
+        System.out.println("Leased By: " + this.getLeasedBy());
+    }
 }

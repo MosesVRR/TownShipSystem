@@ -19,22 +19,12 @@ public class Main {
         rentReceipt.setProperty(property);
 
         // Output details
-        System.out.println("Property Details:");
-        System.out.println("ID: " + property.getId());
-        System.out.println("Address: " + property.getAddress());
-        System.out.println("Rent: $" + property.getRent());
-        System.out.println("Parking Spaces: " + property.getParkingSpaces());
-        System.out.println("Owned By: " + property.getOwnedBy());
-        System.out.println("Leased By: " + property.getLeasedBy());
+        property.printDetails();
+        
 
         // Access RentReceipt from Property
         RentReceipt associatedRentReceipt = property.getRentReceipt();
-        System.out.println("\nRent Receipt Details:");
-        System.out.println("ID: " + associatedRentReceipt.getId());
-        System.out.println("Amount: $" + associatedRentReceipt.getAmount());
-        System.out.println("User: " + associatedRentReceipt.getUser());
-        System.out.println("Notes: " + associatedRentReceipt.getNotes());
-        System.out.println("Created On: " + associatedRentReceipt.getCreatedOn());
-        System.out.println("Updated On: " + associatedRentReceipt.getUpdatedOn());
+        associatedRentReceipt.printDetails();
+        
     }
 }

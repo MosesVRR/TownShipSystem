@@ -57,4 +57,14 @@ class RentReceipt extends Receipts {
         return super.getUpdatedOn();
     }
 
+    public void printDetails(){
+        System.out.println("\nRent Receipt Details:");
+        System.out.println("ID: " + this.getId());
+        System.out.println("Amount: $" + this.getAmount());
+        System.out.println("User: " + this.getUser());
+        System.out.println("Notes: " + this.getNotes());
+        System.out.println("Created On: " + this.getCreatedOn());
+        System.out.println("Updated On: " + this.getUpdatedOn());
+    }
+
 }
